@@ -1,0 +1,98 @@
+.promo-heading {
+    font-size: 54px;
+    margin: 20px 0 12px 0;
+}
+
+.promo-text {
+    font-size: 20px;
+
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .pin-wrapper {
+        height: 100%;
+
+        &.active {
+            .device-color {
+                opacity: 1;
+            }
+        }
+
+        .device-color {
+            opacity: 0;
+            transition: 0.7s;
+        }
+    }
+
+    h2 {
+        position: relative;
+        color: #fff;
+        font-size: 64px;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .silver {
+        color: #d0d1d4;
+    }
+
+    .red {
+        color: #980111;
+    }
+
+    .yellow {
+        color: #f9cf45;
+    }
+
+    .coral {
+        color: #ff6e5b;
+    }
+
+    .pin-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .device-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+            background-position: center !important;
+        }
+    }
+}
+
+#phone01 .device-img {
+    background: url("../../assets/iphone-xr-gallery2-201809.jpeg");
+}
+
+#phone02 .device-img {
+    background: url("../../assets/iphone-xr-gallery3-201809.jpeg");
+}
+
+#phone03 .device-img {
+    background: url("../../assets/iphone-xr-gallery4-201809.jpeg");
+}
+
+#phone04 .device-img {
+    background: url("../../assets/iphone-xr-gallery5-201809.jpeg");
+}
+
+.scrollmagic-pin-spacer {
+    position: absolute !important;
+    clip: rect(auto, auto, auto, auto);
+}
+
+#phone02 .pin-wrapper,
+#phone03 .pin-wrapper,
+#phone04 .pin-wrapper {
+    transform: translateY(-100%);
+}
