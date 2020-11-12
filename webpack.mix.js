@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/js/app.js', 'dist/').sass('src/scss/app.scss', 'dist/').setPublicPath('./')
+mix.js('src/js/app.js', 'dist/').sass('src/scss/app.scss', 'dist/').setPublicPath('dist/')
     .browserSync({
         proxy: 'http://localhost:8080/',
         files: ['src/**/*.*', '*.html']
@@ -19,6 +19,7 @@ mix.js('src/js/app.js', 'dist/').sass('src/scss/app.scss', 'dist/').setPublicPat
     .autoload({
         jquery: ['$', 'window.jQuery']
     })
+    .copy('index.html', 'dist/index.html')
     .options({
         postCss: [
             require('autoprefixer')
