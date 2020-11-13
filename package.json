@@ -2,7 +2,7 @@
   "name": "animation_imageClippingEffect",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "homepage": "https://bournecreative.github.io/bournecreative.scrollClipPath.io/",
   "scripts": {
     "dev": "npm run development",

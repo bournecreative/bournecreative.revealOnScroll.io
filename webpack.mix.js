@@ -11,7 +11,10 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/js/app.js', 'dist/').sass('src/scss/app.scss', 'dist/').setPublicPath('./')
+mix
+    .js('src/js/app.js', 'dist/')
+    .sass('src/scss/app.scss', 'dist/')
+    .setPublicPath('./')
     .browserSync({
         proxy: 'http://localhost:8080/',
         files: ['src/**/*.*', '*.html']
@@ -37,7 +40,8 @@ mix.js('src/js/app.js', 'dist/').sass('src/scss/app.scss', 'dist/').setPublicPat
             }
         }
     })
-
+    .copy('index.html', 'dist/index.html')
+    .setResourceRoot('./')
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
