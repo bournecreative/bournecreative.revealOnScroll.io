@@ -15,6 +15,7 @@ mix
     .js('src/js/app.js', 'dist/')
     .sass('src/scss/app.scss', 'dist/')
     .setPublicPath('./')
+    .setResourceRoot('./')
     .browserSync({
         proxy: 'http://localhost:8080/',
         files: ['src/**/*.*', '*.html']
@@ -40,8 +41,6 @@ mix
             }
         }
     })
-    .copy('index.html', 'dist/index.html')
-    .setResourceRoot('./')
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
