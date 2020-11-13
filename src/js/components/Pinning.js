@@ -47,7 +47,7 @@ export default function () {
 
     pinWrapper.forEach((ele) => {
         var sceneEnter = new ScrollMagic.Scene({
-                triggerHook: 0,
+                triggerHook: .2,
                 triggerElement: ele,
                 duration: "100%"
             })
