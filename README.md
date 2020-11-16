@@ -14,6 +14,6 @@ This effect is acheived using scroll magic and CSS clipping. This is an example 
 
 ### Demo
 
-[Reveal on scroll demo](https://bournecreative.github.io/bournecreative.scrollClipPath.io/)
+[Reveal on scroll demo](https://bournecreative.github.io/bournecreative.revealOnScroll.io/)
 
 Built with vanilla javascript, scss, scroll magic using ES6 modules, and using laravel mix for the project build.
