@@ -2,7 +2,7 @@
 
 As user scrolls webpage, hero section is pinned and the hero image for each of the following sections is revealed as user continues to scroll.
 
-![Clippath scrolling effect](resources/scrollClip.gif)
+![Reveal on scroll gif](resources/revealOnScroll.gif)
 
 
 ## Details
@@ -14,7 +14,6 @@ This effect is acheived using scroll magic and CSS clipping. This is an example 
 
 ### Demo
 
-View demo of effect.
-[Scrolling image clipping concept](https://bournecreative.github.io/bournecreative.scrollClipPath.io/)
+[Reveal on scroll demo](https://bournecreative.github.io/bournecreative.scrollClipPath.io/)
 
 Built with vanilla javascript, scss, scroll magic using ES6 modules, and using laravel mix for the project build.
