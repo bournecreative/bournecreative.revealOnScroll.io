@@ -16,6 +16,7 @@ mix
     .sass('src/scss/app.scss', 'dist/')
     .setPublicPath('dist')
     .setResourceRoot('./')
+    .copy("./index.html", "dist")
     .browserSync({
         proxy: 'http://localhost:8080/',
         files: ['src/**/*.*', '*.html']

@@ -1,11 +1,35 @@
 .promo-heading {
     font-size: 54px;
     margin: 20px 0 12px 0;
+    padding: 0;
 }
 
 .promo-text {
     font-size: 20px;
 
+}
+
+.scroll-arrow {
+    font-size: 40px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 100px
+    }
+
+    50% {
+        bottom: 75px
+    }
+
+    100% {
+        bottom: 100px
+    }
 }
 
 .slide {
